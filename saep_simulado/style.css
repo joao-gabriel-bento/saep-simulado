@@ -1,0 +1,135 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e3f2fd; /* Azul claro suave */
+    color: #212121; /* Cinza escuro para melhor contraste */
+    line-height: 1.6;
+}
+
+/* Container geral */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #1565c0; /* Azul escuro elegante */
+    margin-bottom: 20px;
+}
+
+/* Formulário de cadastro */
+.form-cadastro, .form-pesquisa {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    color: #42a5f5; /* Azul médio para labels */
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    padding: 10px;
+    border: 2px solid #90caf9; /* Azul claro para bordas */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+    border-color: #1565c0; /* Azul escuro ao focar */
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #42a5f5; /* Azul médio para botões */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+/* Formulário de Pesquisa */
+.form-pesquisa input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #90caf9; /* Bordas azul claro */
+}
+
+.form-pesquisa button {
+    margin-top: 10px;
+}
+
+/* Tabela de alunos */
+.table-alunos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-alunos th, .table-alunos td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.table-alunos th {
+    background-color: #42a5f5; /* Azul médio */
+    color: #ffffff;
+}
+
+.table-alunos tbody tr:nth-child(odd) {
+    background-color: #f1f8e9; /* Verde claro sutil */
+}
+
+.table-alunos tbody tr:hover {
+    background-color: #e8f5e9; /* Verde um pouco mais intenso */
+}
+
+.table-alunos a {
+    color: #e53935; /* Vermelho vibrante para links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.table-alunos a:hover {
+    color: #d32f2f; /* Vermelho escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-cadastro, .form-pesquisa {
+        gap: 10px;
+    }
+
+    .table-alunos th, .table-alunos td {
+        padding: 10px;
+    }
+}
